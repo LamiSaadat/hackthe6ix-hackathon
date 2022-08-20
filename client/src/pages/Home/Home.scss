@@ -4,6 +4,8 @@
 .hero {
   &__container {
     display: flex;
+    width: 100%;
+    justify-content: center;
   }
 
   &__header {
@@ -21,7 +23,7 @@
 
     @include tablet {
       display: block;
-      padding: 3rem;
+      padding: 1.5rem;
       text-align: center;
     }
   }
@@ -30,6 +32,9 @@
     @include tablet {
       display: flex;
       flex-direction: row-reverse;
+      height: 90vh;
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -59,6 +64,10 @@
 
   &__subhead {
     text-align: center;
+
+    @include tablet {
+      padding: 1rem;
+    }
   }
 }
 
