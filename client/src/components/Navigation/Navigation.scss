@@ -1,0 +1,9 @@
+.nav {
+    height: 5rem;
+    display: flex;
+    border-bottom: 1px solid black;
+
+    &__logo {
+        width: 10rem;
+    }
+}
