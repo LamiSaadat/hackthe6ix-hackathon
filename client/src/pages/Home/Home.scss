@@ -1,0 +1,74 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.hero {
+  &__container {
+    display: flex;
+  }
+
+  &__header {
+    padding: 3rem;
+    text-align: center;
+    font-size: 2.5rem;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__tablet {
+    display: none;
+
+    @include tablet {
+      display: block;
+      padding: 3rem;
+      text-align: center;
+    }
+  }
+
+  &__wrapper {
+    @include tablet {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__right {
+    width: 100%;
+    @include tablet {
+      width: 55%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+
+    @include tablet {
+      padding-top: 2rem;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      width: 45%;
+    }
+  }
+
+  &__subhead {
+    text-align: center;
+  }
+}
+
+.button {
+  @include button;
+  text-decoration: none;
+  text-align: center;
+  margin: 1rem;
+
+  @include tablet {
+    margin: 1rem 5rem;
+  }
+}
