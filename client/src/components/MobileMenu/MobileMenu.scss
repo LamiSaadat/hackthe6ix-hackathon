@@ -1,0 +1,68 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.mobile-menu {
+    margin: 0 1.5rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .5s ease;
+
+    &.active {
+        top: 10rem;
+        height: 80%;
+        width: 90%;
+        visibility: visible;
+        display: flex;
+        position: absolute;
+        z-index: 997;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        
+        @include tablet {
+            visibility:hidden;
+        }
+    }
+
+    &__links {
+        width: 100%;
+    }
+
+    &__list-item {
+        width: 100%;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid $primary-border;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__actions {
+        box-shadow: 0 2px 10px #00000012;
+        height: 5.5rem;
+        width: 115%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__login {
+        @include secondary-button;
+        padding: .75rem 1rem;
+    }
+
+    &__button {
+        @include button;
+        padding: .75rem 1rem;
+    }
+
+    &__icon {
+        height: 1rem;
+    }
+}

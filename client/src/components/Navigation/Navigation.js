@@ -3,9 +3,9 @@ import logo from "../../assets/images/wealthsimple-logo.png";
 import { Link } from "react-router-dom";
 import downArrow from "../../assets/icons/down-arrow.png";
 
-function Navigation() {
+function Navigation({ menuOpen, setMenuOpen }) {
   return (
-    <nav className="nav">
+    <nav className={"nav " + (menuOpen && "active")}>
       <Link to="https://www.wealthsimple.com/">
         <img src={logo} className="nav__logo"></img>
       </Link>
@@ -26,6 +26,10 @@ function Navigation() {
           Log in
         </Link>
         <button className="nav__button">Download the app</button>
+      </div>
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        <span className="hamburger__line1"></span>
+        <span className="hamburger__line2"></span>
       </div>
     </nav>
   );
