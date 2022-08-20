@@ -37,9 +37,29 @@
         padding-bottom: 1.25rem;
         border-bottom: 1px solid $primary-border;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
         cursor: pointer;
+
+        &.active-invest{
+            padding-bottom: 0rem;
+        }
+    }
+
+    &__list-header {
+        width: 100%;
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    &__list-text {
+        font-size: 1.25rem;
+        margin-bottom: 2.5rem;
+
+        &.active-invest{
+            margin-bottom: 1.25rem;
+        }
     }
 
     &__actions {
@@ -64,5 +84,15 @@
 
     &__icon {
         height: 1rem;
+        width: 1rem;
+
+        &.active-arrow {
+            transform: rotate(-180deg);
+        }
+    }
+
+    &__invest-item {
+        font-weight: 400;
+        margin-bottom: 1rem;
     }
 }
