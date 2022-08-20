@@ -8,10 +8,6 @@ export default function MobileMenu({ menuOpen, setMenuOpen }) {
     setMenuOpen(!menuOpen);
   };
 
-  //   useEffect(() => {
-  //     Aos.init({ duration: 600 });
-  //   }, []);
-
   return (
     <nav className={"mobile-menu " + (menuOpen && "active")}>
       <ul className="mobile-menu__links">

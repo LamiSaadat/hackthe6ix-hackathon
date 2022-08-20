@@ -2,14 +2,18 @@
 @use "../../styles/partials/variables" as *;
 
 .nav {
+    display: flex;
+    flex-direction: column;
+
+    &__main {
     padding: 0 1rem;
     height: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid black;
     position: sticky;
     z-index: 99;
+    }
 
     &__logo {
         width: 11rem;
@@ -18,7 +22,7 @@
     &__list {
         display: none;
 
-        @include tablet {
+        @include desktop {
             display: flex;
             gap: 2rem;
         }
@@ -29,23 +33,24 @@
         align-items: center;
         gap: .5rem;
         cursor: pointer;
-    }
+
+        &:hover {
+            img {
+                transform: rotate(-180deg);
+                }
+            }
+        }
 
     &__icon {
         height: 1rem;
         transition: transform .5s cubic-bezier(.76,0,.24,1);
         cursor: pointer;
-
-        &:hover {
-            transform: rotate(-180deg);
-
-        }
     }
 
     &__actions {
         display: none;
 
-        @include tablet {
+        @include desktop {
             display: flex;
             align-items: center;
             gap: 1rem;
@@ -62,11 +67,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 2rem;
+    width: 1.75rem;
     height: .75rem;
     cursor: pointer;
 
-    @include tablet {
+    @include desktop {
         display: none;
     }
 
@@ -75,7 +80,7 @@
         width: 100%;
         height: 2px;
         background-color: $primary-font-color;
-        transition: all 1s ease;
+        transition: all .5s ease;
     }
 }
 
@@ -87,11 +92,11 @@
         span {
             &:first-child {
                 background-color: $primary-font-color;
-                transform: translate(5px, 5px) rotate(45deg);         
+                transform: translate(5px, 5px) rotate(-45deg);         
              }
             &:nth-child(2) {
                 background-color: $primary-font-color;
-                transform: translate(5px, -5px) rotate(-45deg);            
+                transform: translate(5px, -5px) rotate(45deg);            
             }
         }
     }

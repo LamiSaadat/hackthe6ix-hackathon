@@ -7,14 +7,16 @@ import MobileMenu from "./components/MobileMenu/MobileMenu";
 
 const App = () => {
   const [investMenuOpen, setInvestMenuOpen] = useState(false);
-  const [taxMenuOpen, setTaxMenuOpen] = useState(false);
+  const [learnMenuOpen, setLearnMenuOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <Router>
       <Navigation
         investMenuOpen={investMenuOpen}
-        taxMenuOpen={taxMenuOpen}
+        setInvestMenuOpen={setInvestMenuOpen}
+        learnMenuOpen={learnMenuOpen}
+        setLearnMenuOpen={setLearnMenuOpen}
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
       />
