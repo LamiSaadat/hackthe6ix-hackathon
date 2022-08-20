@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+@use "./styles/partials/variables" as *;
+@use "./styles/partials/mixins" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: $primary-font-color;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $primary-font-color;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: $primary-font-color;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: $primary-font-color;
 }
