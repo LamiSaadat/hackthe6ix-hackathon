@@ -1,0 +1,30 @@
+@use "./variables" as *;
+
+// Breakpoints //
+@mixin tablet {
+    @media screen and (min-width: $tablet-breakpoint) {     
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+// Mixins //
+@mixin button {
+    padding: 1.25rem 1.75rem;
+    background-color: $button-color;
+    color: $secondary-font-color;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 20rem;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-image: $button-hover-color;
+    }
+}

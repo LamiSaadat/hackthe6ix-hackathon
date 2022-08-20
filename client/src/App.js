@@ -1,7 +1,18 @@
 import "./App.scss";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ChakraProvider } from "@chakra-ui/react";
+import Home from "./pages/Home/Home";
+import Navigation from "./components/Navigation/Navigation";
 
-function App() {
-  return <div></div>;
-}
+const App = () => {
+  return (
+    <Router>
+      <Navigation />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;
