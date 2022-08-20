@@ -5,8 +5,6 @@ import Navigation from "./components/Navigation/Navigation";
 import { useState } from "react";
 import MobileMenu from "./components/MobileMenu/MobileMenu";
 
-import Card from "./components/Card/Card";
-
 const App = () => {
   const [investMenuOpen, setInvestMenuOpen] = useState(false);
   const [learnMenuOpen, setLearnMenuOpen] = useState(false);
@@ -25,7 +23,6 @@ const App = () => {
       {menuOpen && <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="card" element={<Card />} />
       </Routes>
     </Router>
   );

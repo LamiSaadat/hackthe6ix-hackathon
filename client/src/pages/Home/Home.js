@@ -2,6 +2,8 @@ import "./Home.scss";
 import "../../App.scss";
 import { Link } from "react-router-dom";
 
+import PersonalFinance from "../../components/PersonalFinance/PersonalFinance";
+
 import hero from "../../assets/images/homepage-hero.png";
 
 function Home() {
@@ -24,6 +26,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <PersonalFinance />
     </>
   );
 }
