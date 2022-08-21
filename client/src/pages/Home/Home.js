@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 import hero from "../../assets/images/homepage-hero.png";
 import Language from "../../components/Language/Language";
+import PersonalFinance from "../../components/PersonalFinance/PersonalFinance";
+import FinanceDefinition from "../../components/FinanceDefinition/FinanceDefinition";
 
 function Home() {
   return (
@@ -26,6 +28,8 @@ function Home() {
         </div>
       </div>
       <Language />
+      <PersonalFinance />
+      <FinanceDefinition />
     </>
   );
 }
