@@ -4,8 +4,8 @@ import Home from "./pages/Home/Home";
 import Navigation from "./components/Navigation/Navigation";
 import { useState } from "react";
 import MobileMenu from "./components/MobileMenu/MobileMenu";
-
 import Card from "./components/Card/Card";
+import Investing from "./components/Investing/Investing";
 
 const App = () => {
   const [investMenuOpen, setInvestMenuOpen] = useState(false);
@@ -26,6 +26,7 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="card" element={<Card />} />
+        <Route exact path="investing101" element={<Investing />} />
       </Routes>
     </Router>
   );
