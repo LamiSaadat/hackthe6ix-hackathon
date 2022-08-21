@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./CTA.scss";
 
 function CTA() {
@@ -11,9 +10,12 @@ function CTA() {
             <h2>Ready to start?</h2>
           </div>
           <div className="cta-card__bottom">
-            <Link to="https://my.wealthsimple.com/app/public/signup?locale=en-ca">
+            <a
+              href="https://my.wealthsimple.com/app/public/signup?locale=en-ca"
+              className="cta-card__button"
+            >
               Get Started
-            </Link>
+            </a>
           </div>
         </div>
       </div>
