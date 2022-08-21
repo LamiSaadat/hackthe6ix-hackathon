@@ -1,0 +1,47 @@
+@use "./variables" as *;
+
+// Breakpoints //
+@mixin tablet {
+    @media screen and (min-width: $tablet-breakpoint) {     
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+// Mixins //
+@mixin button {
+    padding: 1.25rem 1.75rem;
+    background-color: $button-color;
+    color: $secondary-font-color;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 20rem;
+    border: none;
+    cursor: pointer;
+    transition: background-image .35s cubic-bezier(.76,0,.24,1);
+
+    &:hover {
+        background-image: $button-hover-color;
+    }
+}
+
+@mixin secondary-button {
+    padding: 1.25rem 1.75rem;
+    color: $primary-font-color;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 20rem;
+    border: 1px solid $primary-border;
+    cursor: pointer;
+    transition: border-color .35s cubic-bezier(.76,0,.24,1);
+
+
+    &:hover {
+        border: 1px solid $primary-font-color;
+    }
+}

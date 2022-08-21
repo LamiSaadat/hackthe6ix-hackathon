@@ -1,0 +1,96 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.hero {
+  background-color: $primary-background-color;
+
+  @include tablet {
+    background: url("../../assets/images/wealthsimple_og_image.jpeg") no-repeat;
+    background-size: cover;
+  }
+  &__container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &__header {
+    padding: 3rem;
+    text-align: center;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__tablet {
+    display: none;
+
+    @include tablet {
+      width: 40rem;
+      display: block;
+      padding: 1.5rem;
+      text-align: center;
+    }
+  }
+
+  &__wrapper {
+    @include tablet {
+      display: flex;
+      flex-direction: row-reverse;
+      height: 90vh;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    @include tablet {
+      width: 55%;
+      display: none;
+    }
+  }
+
+  &__image {
+    width: 25rem;
+    height: 100%;
+
+    @include tablet {
+      display: none;
+      padding-top: 2rem;
+      width: 35rem;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__subhead {
+    text-align: center;
+
+    @include tablet {
+      padding: 1rem;
+    }
+  }
+}
+
+.button {
+  @include button;
+  text-decoration: none;
+  text-align: center;
+  margin: 1rem;
+  width: 8rem;
+
+  @include tablet {
+    margin: 1rem 5rem;
+  }
+}

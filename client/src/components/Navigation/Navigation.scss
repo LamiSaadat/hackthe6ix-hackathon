@@ -1,0 +1,108 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    overflow: hidden;
+
+    &__main {
+    width: 98%;
+    padding: 0 1rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+    }
+
+    &__logo {
+        width: 11rem;
+    }
+
+    &__list {
+        display: none;
+
+        @include desktop {
+            display: flex;
+            gap: 2rem;
+        }
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        cursor: pointer;
+
+        &:hover {
+            img {
+                transform: rotate(-180deg);
+                }
+            }
+        }
+
+    &__icon {
+        height: 1rem;
+        transition: transform .5s cubic-bezier(.76,0,.24,1);
+        cursor: pointer;
+    }
+
+    &__actions {
+        display: none;
+
+        @include desktop {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+
+    &__button {
+        @include button;
+        padding: 1rem 1.5rem;
+    }
+}
+
+.hamburger {
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.75rem;
+    height: .75rem;
+    cursor: pointer;
+
+    @include desktop {
+        display: none;
+    }
+
+    &__line1, &__line2 {
+        transform-origin: 50% 50%;
+        width: 100%;
+        height: 2px;
+        background-color: $primary-font-color;
+        transition: all .5s ease;
+    }
+}
+
+.active {
+    color: $primary-font-color;
+
+    .hamburger {
+
+        span {
+            &:first-child {
+                background-color: $primary-font-color;
+                transform: translate(5px, 5px) rotate(-45deg);         
+             }
+            &:nth-child(2) {
+                background-color: $primary-font-color;
+                transform: translate(5px, -5px) rotate(45deg);            
+            }
+        }
+    }
+}

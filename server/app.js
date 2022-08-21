@@ -4,11 +4,10 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors());
-("");
+
+const financeRoutes = require("./routes/financesRoutes");
 
 // ROUTES
-app.get("/", function (req, res) {
-  res.send("Welcome to the server");
-});
+app.use("/", financeRoutes);
 
 module.exports = app;

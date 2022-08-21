@@ -1,0 +1,100 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .5s ease;
+
+    &.active {
+        height: 92%;
+        width: 100%;
+        visibility: visible;
+        display: flex;
+        position: absolute;
+        z-index: 997;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        
+        @include desktop {
+            visibility:hidden;
+        }
+    }
+
+    &__links {
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    &__list-item {
+        width: 95%;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        padding-bottom: 1.25rem;
+        padding-left: 1rem;
+        border-bottom: 1px solid $primary-border;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+
+        &.active-invest{
+            padding-bottom: 0rem;
+            width: 95%;
+        }
+    }
+
+    &__list-header {
+        width: 100%;
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    &__list-text {
+        font-size: 1.25rem;
+        margin-bottom: 2.5rem;
+
+        &.active-invest{
+            margin-bottom: 1.25rem;
+            width: 100%;
+        }
+    }
+
+    &__actions {
+        box-shadow: 0 2px 10px #00000012;
+        height: 5.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__login {
+        @include secondary-button;
+        padding: .75rem 1rem;
+    }
+
+    &__button {
+        @include button;
+        padding: .75rem 1rem;
+    }
+
+    &__icon {
+        height: 1rem;
+        width: 1rem;
+
+        &.active-arrow {
+            transform: rotate(-180deg);
+        }
+    }
+
+    &__invest-item {
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+}
