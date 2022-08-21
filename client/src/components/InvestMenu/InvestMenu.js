@@ -11,19 +11,31 @@ function InvestMenu({ investMenuOpen, setInvestMenuOpen }) {
       onMouseLeave={() => setInvestMenuOpen(!investMenuOpen)}
     >
       <li onClick={() => toggleMenu()}>
-        <Link to="https://www.wealthsimple.com/en-ca/invest/stocks-and-etfs">
+        <a
+          href="https://www.wealthsimple.com/en-ca/invest/stocks-and-etfs"
+          target="_blank"
+          rel="noreferrer"
+        >
           Stocks & ETFs
-        </Link>
+        </a>
       </li>
       <li onClick={() => toggleMenu()}>
-        <Link to="https://www.wealthsimple.com/en-ca/invest/crypto">
+        <a
+          href="https://www.wealthsimple.com/en-ca/invest/crypto"
+          target="_blank"
+          rel="noreferrer"
+        >
           Crypto
-        </Link>
+        </a>
       </li>
       <li onClick={() => toggleMenu()}>
-        <Link to="https://www.wealthsimple.com/en-ca/invest/managed-investing">
+        <a
+          href="https://www.wealthsimple.com/en-ca/invest/managed-investing"
+          target="_blank"
+          rel="noreferrer"
+        >
           Managed Investing
-        </Link>
+        </a>
       </li>
     </ul>
   );

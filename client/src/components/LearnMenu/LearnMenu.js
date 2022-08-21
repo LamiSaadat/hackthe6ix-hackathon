@@ -11,17 +11,31 @@ function LearnMenu({ learnMenuOpen, setLearnMenuOpen }) {
       onMouseLeave={() => setLearnMenuOpen(!learnMenuOpen)}
     >
       <li onClick={() => toggleMenu()}>
-        <Link to="https://www.wealthsimple.com/en-ca/magazine">Magazine</Link>
+        <a
+          href="https://www.wealthsimple.com/en-ca/magazine"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Magazine
+        </a>
       </li>
       <li onClick={() => toggleMenu()}>
-        <Link to="https://www.wealthsimple.com/en-ca/learn">
+        <a
+          href="https://www.wealthsimple.com/en-ca/learn"
+          target="_blank"
+          rel="noreferrer"
+        >
           Personal finance 101
-        </Link>
+        </a>
       </li>
       <li onClick={() => toggleMenu()}>
-        <Link to="https://www.wealthsimple.com/en-ca/tool/tax-calculator">
+        <a
+          href="https://www.wealthsimple.com/en-ca/tool/tax-calculator"
+          target="_blank"
+          rel="noreferrer"
+        >
           Income tax calculator
-        </Link>
+        </a>
       </li>
     </ul>
   );
