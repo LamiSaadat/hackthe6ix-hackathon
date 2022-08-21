@@ -2,6 +2,7 @@
 @use "../../styles/partials/mixins" as *;
 
 .card {
+  margin: 2rem 0;
   @include tablet {
     height: 70vh;
     padding: 3rem;
@@ -43,6 +44,7 @@
 
   &__header {
     text-align: center;
+    max-width: 50rem;
 
     @include tablet {
       height: 60%;

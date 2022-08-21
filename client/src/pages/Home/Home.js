@@ -1,8 +1,7 @@
 import "./Home.scss";
 import "../../App.scss";
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import hero from "../../assets/images/homepage-hero.png";
+import hero from "../../assets/hero.png";
 import Investing from "../../components/Investing/Investing";
 import AccountTypes from "../../components/AccountTypes/AccountTypes";
 import InvestmentTypes from "../../components/InvestmentTypes/InvestmentTypes";
@@ -11,7 +10,6 @@ import Language from "../../components/Language/Language";
 import Options from "../../components/Options/Options";
 import PersonalFinance from "../../components/PersonalFinance/PersonalFinance";
 import FinanceDefinition from "../../components/FinanceDefinition/FinanceDefinition";
-import axios from "axios";
 
 function Home() {
   return (
@@ -26,7 +24,7 @@ function Home() {
           </div>
           <div className="hero__left">
             <h2 className="hero__tablet">Investing made simple</h2>
-            <h3 className="hero__subhead">New to Canada?</h3>
+            <h3 className="hero__subhead">New to Investing?</h3>
             <Link to="/" className="button">
               Get Started
             </Link>

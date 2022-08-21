@@ -1,0 +1,14 @@
+.finance {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__content {
+        max-width: 50rem;
+    }
+
+    &__image {
+        height: 10rem;
+    }
+}

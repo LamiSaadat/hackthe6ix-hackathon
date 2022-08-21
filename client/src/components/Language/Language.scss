@@ -3,6 +3,8 @@
 
 .lang-card {
   height: 90vh;
+  padding-bottom: 1rem;
+  margin: 2rem 0;
 
   @include tablet {
     height: 70vh;
@@ -10,6 +12,8 @@
   }
 
   &__container {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     background-color: $beige-card-color;
     border-radius: 15px;
@@ -25,10 +29,11 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 2rem;
+    padding: 0;
 
     @include tablet {
       height: 40%;
+      padding: 2rem;
     }
   }
 
@@ -54,6 +59,7 @@
   }
 
   &__image {
+    cursor: pointer;
     height: 3rem;
     margin: 0;
     @include tablet {
@@ -62,6 +68,7 @@
   }
 
   &__image-1 {
+    cursor: pointer;
     margin-bottom: 0.5rem;
     @include tablet {
       height: 6rem;
@@ -69,6 +76,7 @@
   }
 
   &__image-2 {
+    cursor: pointer;
     margin-bottom: 0.5rem;
     @include tablet {
       height: 6rem;
@@ -76,6 +84,7 @@
   }
 
   &__image-4 {
+    cursor: pointer;
     margin-bottom: 0.5rem;
   }
 }
