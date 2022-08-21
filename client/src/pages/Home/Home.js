@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import hero from "../../assets/images/homepage-hero.png";
 import Language from "../../components/Language/Language";
+import Options from "../../components/Options/Options";
 
 function Home() {
   return (
@@ -26,6 +27,7 @@ function Home() {
         </div>
       </div>
       <Language />
+      <Options />
     </>
   );
 }
