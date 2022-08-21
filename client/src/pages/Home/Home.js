@@ -15,7 +15,7 @@ function Home() {
             <img src={hero} alt="hero" className="hero__image" />
           </div>
           <div className="hero__left">
-            <h2 className="hero__tablet">Investing made simple</h2>
+            <h1 className="hero__tablet">Investing made simple</h1>
             <h3 className="hero__subhead">New to Investing?</h3>
             <Link to="/language" className="button">
               Get Started
