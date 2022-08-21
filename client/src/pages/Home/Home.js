@@ -1,5 +1,6 @@
 import "./Home.scss";
 import "../../App.scss";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import hero from "../../assets/images/homepage-hero.png";
 import Investing from "../../components/Investing/Investing";
@@ -10,6 +11,7 @@ import Language from "../../components/Language/Language";
 import Options from "../../components/Options/Options";
 import PersonalFinance from "../../components/PersonalFinance/PersonalFinance";
 import FinanceDefinition from "../../components/FinanceDefinition/FinanceDefinition";
+import axios from "axios";
 
 function Home() {
   return (
@@ -31,14 +33,14 @@ function Home() {
           </div>
         </div>
       </div>
-      <Investing />
-      <AccountTypes />
-      <InvestmentTypes />
-      <Taxes />
       <Language />
       <PersonalFinance />
       <FinanceDefinition />
       <Options />
+      {/* <Investing /> */}
+      <AccountTypes />
+      <InvestmentTypes />
+      {/* <Taxes /> */}
     </>
   );
 }

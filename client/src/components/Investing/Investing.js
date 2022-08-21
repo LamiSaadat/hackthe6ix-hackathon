@@ -1,6 +1,7 @@
 import "./Investing.scss";
 import Carousel from "../Carousel/Carousel";
 import { useState } from "react";
+import axios from "axios";
 
 function Investing() {
   const [borderColor, setBorderColor] = useState("green");

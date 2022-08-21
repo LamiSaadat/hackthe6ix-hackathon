@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
 
-    &__container {
+    &__slide {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +19,7 @@
 
     &__border-green {
         background-color: $green-border;
-        height: 2rem;
+        height: 1.5rem;
         width: 100%;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -27,7 +27,7 @@
 
     &__border-light-green {
         background-color: $light-green-border;
-        height: 2rem;
+        height: 1.5rem;
         width: 100%;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -35,7 +35,7 @@
 
     &__border-blue {
         background-color: $blue-border;
-        height: 2rem;
+        height: 1.5rem;
         width: 100%;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -43,7 +43,7 @@
 
     &__border-purple {
         background-color: $purple-border;
-        height: 2rem;
+        height: 1.5rem;
         width: 100%;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -51,5 +51,9 @@
 
     &__title {
         margin: 1rem 0;
+    }
+
+    &__text {
+        width: 27rem;
     }
 }
