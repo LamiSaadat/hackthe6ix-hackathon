@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 
 import hero from "../../assets/images/homepage-hero.png";
 import Language from "../../components/Language/Language";
+<<<<<<< HEAD
 import Options from "../../components/Options/Options";
+=======
+import PersonalFinance from "../../components/PersonalFinance/PersonalFinance";
+import FinanceDefinition from "../../components/FinanceDefinition/FinanceDefinition";
+>>>>>>> develop
 
 function Home() {
   return (
@@ -27,7 +32,12 @@ function Home() {
         </div>
       </div>
       <Language />
+<<<<<<< HEAD
       <Options />
+=======
+      <PersonalFinance />
+      <FinanceDefinition />
+>>>>>>> develop
     </>
   );
 }
