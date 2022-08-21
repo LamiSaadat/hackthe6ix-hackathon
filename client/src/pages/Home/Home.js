@@ -1,10 +1,12 @@
 import "./Home.scss";
 import "../../App.scss";
 import { Link } from "react-router-dom";
-
 import hero from "../../assets/images/homepage-hero.png";
+import Investing from "../../components/Investing/Investing";
+import AccountTypes from "../../components/AccountTypes/AccountTypes";
+import InvestmentTypes from "../../components/InvestmentTypes/InvestmentTypes";
+import Taxes from "../../components/Taxes/Taxes";
 import Language from "../../components/Language/Language";
-
 import Options from "../../components/Options/Options";
 import PersonalFinance from "../../components/PersonalFinance/PersonalFinance";
 import FinanceDefinition from "../../components/FinanceDefinition/FinanceDefinition";
@@ -29,6 +31,10 @@ function Home() {
           </div>
         </div>
       </div>
+      <Investing />
+      <AccountTypes />
+      <InvestmentTypes />
+      <Taxes />
       <Language />
       <PersonalFinance />
       <FinanceDefinition />

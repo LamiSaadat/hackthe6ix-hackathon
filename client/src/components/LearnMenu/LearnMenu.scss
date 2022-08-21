@@ -2,6 +2,10 @@
 @use "../../styles/partials/variables" as *;
 
 .learn-menu {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 5rem;
     padding: 2rem 5rem 2rem 0;
     display: flex;
     gap: 1rem;
