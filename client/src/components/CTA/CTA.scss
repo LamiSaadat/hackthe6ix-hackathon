@@ -1,0 +1,47 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.cta-card {
+  height: 90vh;
+
+  @include tablet {
+    height: 70vh;
+    padding: 3rem;
+  }
+
+  &__container {
+    height: 100vh;
+    background-color: $green-card-color;
+    border-radius: 15px;
+  }
+
+  &__content {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+
+    @include tablet {
+      height: 40%;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    height: 20%;
+  }
+
+  &__button {
+    @include button;
+    text-align: center;
+    width: 12rem;
+    height: 2rem;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
