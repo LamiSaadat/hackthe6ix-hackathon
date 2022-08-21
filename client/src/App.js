@@ -5,7 +5,6 @@ import Home from "./pages/Home/Home";
 import Navigation from "./components/Navigation/Navigation";
 
 import Card from "./components/Card/Card";
-import Language from "./components/Language/Language";
 
 const App = () => {
   return (
@@ -14,7 +13,6 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="card" element={<Card />} />
-        <Route exact path="lang" element={<Language />} />
       </Routes>
     </Router>
   );
