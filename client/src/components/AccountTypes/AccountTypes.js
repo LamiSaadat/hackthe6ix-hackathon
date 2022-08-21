@@ -20,10 +20,13 @@ function AccountTypes({ data }) {
   }, []);
 
   return (
-    <section className="accounts" id="account-types" data-aos="fade-up">
-      <h2 className="accounts__title">Account Types</h2>
-      <Carousel borderColor={borderColor} data={accountData} />
-    </section>
+    <>
+      <a id="account-types"></a>
+      <section className="accounts" data-aos="fade-up">
+        <h2 className="accounts__title">Account Types</h2>
+        <Carousel borderColor={borderColor} data={accountData} />
+      </section>
+    </>
   );
 }
 

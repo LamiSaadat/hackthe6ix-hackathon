@@ -19,10 +19,13 @@ function Taxes() {
     Aos.init({ duration: 600 });
   }, []);
   return (
-    <section className="taxes" id="taxes" data-aos="fade-up">
-      <h2 className="taxes__title">Taxes</h2>
-      <Carousel borderColor={borderColor} data={taxData} />
-    </section>
+    <>
+      <a id="taxes"></a>
+      <section className="taxes" data-aos="fade-up">
+        <h2 className="taxes__title">Taxes</h2>
+        <Carousel borderColor={borderColor} data={taxData} />
+      </section>
+    </>
   );
 }
 

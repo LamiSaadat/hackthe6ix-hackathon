@@ -20,10 +20,13 @@ function Investing() {
   }, []);
 
   return (
-    <section className="investing" id="investing" data-aos="fade-up">
-      <h2 className="investing__title">Investing 101</h2>
-      <Carousel borderColor={borderColor} data={investingData} />
-    </section>
+    <>
+      <a id="investing"></a>
+      <section className="investing" data-aos="fade-up">
+        <h2 className="investing__title">Investing 101</h2>
+        <Carousel borderColor={borderColor} data={investingData} />
+      </section>
+    </>
   );
 }
 

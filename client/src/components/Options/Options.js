@@ -11,7 +11,8 @@ function Options() {
   }, []);
   return (
     <>
-      <div className="options-card" id="options" data-aos="fade-up">
+      <a id="options"></a>
+      <div className="options-card" data-aos="fade-up">
         <div className="options-card__container">
           <div className="options-card__content">
             <h2>What would you like to learn more about?</h2>

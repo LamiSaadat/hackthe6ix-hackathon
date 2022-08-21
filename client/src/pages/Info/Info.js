@@ -7,6 +7,7 @@ import Investing from "../../components/Investing/Investing";
 import AccountTypes from "../../components/AccountTypes/AccountTypes";
 import InvestmentTypes from "../../components/InvestmentTypes/InvestmentTypes";
 import Taxes from "../../components/Taxes/Taxes";
+import CTA from "../../components/CTA/CTA";
 
 function Info() {
   return (
@@ -18,6 +19,7 @@ function Info() {
       <Taxes />
       <AccountTypes />
       <InvestmentTypes />
+      <CTA />
     </>
   );
 }

@@ -19,10 +19,13 @@ function InvestmentTypes() {
     Aos.init({ duration: 600 });
   }, []);
   return (
-    <section className="investments" id="investment-types" data-aos="fade-up">
-      <h2 className="investments__title">Investment Types</h2>
-      <Carousel borderColor={borderColor} data={investmentsData} />
-    </section>
+    <>
+      <a id="investment-types"></a>
+      <section className="investments" data-aos="fade-up">
+        <h2 className="investments__title">Investment Types</h2>
+        <Carousel borderColor={borderColor} data={investmentsData} />
+      </section>
+    </>
   );
 }
 
