@@ -16,8 +16,8 @@ function Navigation({
   return (
     <nav className="nav">
       <main className={"nav__main " + (menuOpen && "active")}>
-        <Link to="https://www.wealthsimple.com/">
-          <img src={logo} className="nav__logo"></img>
+        <Link to="/">
+          <img src={logo} className="nav__logo" alt="logo" />
         </Link>
         <ul className="nav__list">
           <li
@@ -30,12 +30,22 @@ function Navigation({
             <img src={downArrow} alt="Down arrow" className="nav__icon"></img>
           </li>
           <li className="nav__list-item">
-            <Link to="https://www.wealthsimple.com/en-ca/spend">
+            <a
+              href="https://www.wealthsimple.com/en-ca/spend"
+              target="_blank"
+              rel="noreferrer"
+            >
               Spend & save
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="https://www.wealthsimple.com/en-ca/tax">Tax</Link>
+            <a
+              href="https://www.wealthsimple.com/en-ca/tax"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Tax
+            </a>
           </li>
           <li
             className="nav__list-item nav__list-item--hover"
@@ -48,9 +58,13 @@ function Navigation({
           </li>
         </ul>
         <div className="nav__actions">
-          <Link to="https://my.wealthsimple.com/app/public/signup?locale=en-ca">
+          <a
+            href="https://my.wealthsimple.com/app/public/signup?locale=en-ca"
+            target="_blank"
+            rel="noreferrer"
+          >
             Log in
-          </Link>
+          </a>
           <button className="nav__button">Download the app</button>
         </div>
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
