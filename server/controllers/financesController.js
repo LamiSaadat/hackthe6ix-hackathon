@@ -1,5 +1,11 @@
 const knex = require("knex")(require("../knexfile").development);
 
+exports.index = (req, res) => {
+  knex("finances").then((data) => {
+    res.status(200).json(data);
+  });
+};
+
 exports.item = (req, res) => {
   knex("finances")
     .where({ type: req.params.type })

@@ -6,6 +6,10 @@ import Investing from "../../components/Investing/Investing";
 import AccountTypes from "../../components/AccountTypes/AccountTypes";
 import InvestmentTypes from "../../components/InvestmentTypes/InvestmentTypes";
 import Taxes from "../../components/Taxes/Taxes";
+import Language from "../../components/Language/Language";
+import Options from "../../components/Options/Options";
+import PersonalFinance from "../../components/PersonalFinance/PersonalFinance";
+import FinanceDefinition from "../../components/FinanceDefinition/FinanceDefinition";
 
 function Home() {
   return (
@@ -31,6 +35,10 @@ function Home() {
       <AccountTypes />
       <InvestmentTypes />
       <Taxes />
+      <Language />
+      <PersonalFinance />
+      <FinanceDefinition />
+      <Options />
     </>
   );
 }
