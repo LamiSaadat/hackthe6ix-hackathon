@@ -27,6 +27,7 @@
     display: none;
 
     @include tablet {
+      width: 40rem;
       display: block;
       padding: 1.5rem;
       text-align: center;
@@ -50,6 +51,7 @@
     width: 100%;
     @include tablet {
       width: 55%;
+      display: none;
     }
   }
 
@@ -70,11 +72,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-
-    @include tablet{
-      margin-left: 25rem;
-
-    }
   }
 
   &__subhead {

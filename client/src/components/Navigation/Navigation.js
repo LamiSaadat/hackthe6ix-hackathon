@@ -17,7 +17,12 @@ function Navigation({
     <nav className="nav">
       <main className={"nav__main " + (menuOpen && "active")}>
         <Link to="/">
-          <img src={logo} className="nav__logo" alt="logo" />
+          <img
+            src={logo}
+            className="nav__logo"
+            alt="logo"
+            onClick={() => setMenuOpen(false)}
+          />
         </Link>
         <ul className="nav__list">
           <li
@@ -65,7 +70,9 @@ function Navigation({
           >
             Log in
           </a>
-          <button className="nav__button">Download the app</button>
+          <Link to="/language" className="nav__button">
+            Get Started
+          </Link>
         </div>
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
           <span className="hamburger__line1"></span>

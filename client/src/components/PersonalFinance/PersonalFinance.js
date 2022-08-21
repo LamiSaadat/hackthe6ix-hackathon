@@ -1,11 +1,16 @@
 import "./PersonalFinance.scss";
-
+import "aos/dist/aos.css";
+import Aos from "aos";
+import { useEffect } from "react";
 import coin from "../../assets/images/coin.png";
 
 function PersonalFinance() {
+  useEffect(() => {
+    Aos.init({ duration: 600 });
+  }, []);
   return (
     <>
-      <div className="card">
+      <div className="card" data-aos="fade-up">
         <div className="card__container">
           <div className="card__content">
             <div className="personal-finance">

@@ -1,12 +1,17 @@
 import "./FinanceDefinition.scss";
-import { Link } from "react-router-dom";
-
+import { HashLink as Link } from "react-router-hash-link";
 import piggyIcon from "../../assets/images/piggy-bank.png";
+import "aos/dist/aos.css";
+import Aos from "aos";
+import { useEffect } from "react";
 
 function FinanceDefinition() {
+  useEffect(() => {
+    Aos.init({ duration: 600 });
+  }, []);
   return (
     <>
-      <div className="card">
+      <div className="card" data-aos="fade-up">
         <div className="card__container card__container--blue">
           <div className="card__content">
             <div className="finance">
@@ -18,7 +23,7 @@ function FinanceDefinition() {
                 That's why we're here.
               </p>
               <div className="finance__button">
-                <Link to="/" className="button">
+                <Link to="#options" className="button">
                   Learn More
                 </Link>
               </div>
