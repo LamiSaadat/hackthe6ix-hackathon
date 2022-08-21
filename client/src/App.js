@@ -28,11 +28,6 @@ const App = () => {
       {menuOpen && <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="card" element={<Card />} />
-        <Route exact path="investing101" element={<Investing />} />
-        <Route exact path="account-types" element={<AccountTypes />} />
-        <Route exact path="investment-types" element={<InvestmentTypes />} />
-        <Route exact path="taxes" element={<Taxes />} />
       </Routes>
     </Router>
   );

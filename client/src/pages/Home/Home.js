@@ -1,8 +1,11 @@
 import "./Home.scss";
 import "../../App.scss";
 import { Link } from "react-router-dom";
-
 import hero from "../../assets/images/homepage-hero.png";
+import Investing from "../../components/Investing/Investing";
+import AccountTypes from "../../components/AccountTypes/AccountTypes";
+import InvestmentTypes from "../../components/InvestmentTypes/InvestmentTypes";
+import Taxes from "../../components/Taxes/Taxes";
 
 function Home() {
   return (
@@ -24,6 +27,10 @@ function Home() {
           </div>
         </div>
       </div>
+      <Investing />
+      <AccountTypes />
+      <InvestmentTypes />
+      <Taxes />
     </>
   );
 }
