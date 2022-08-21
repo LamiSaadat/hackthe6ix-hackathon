@@ -2,6 +2,12 @@
 @use "../../styles/partials/mixins" as *;
 
 .hero {
+  background-color: $primary-background-color;
+
+  @include tablet {
+    background: url("../../assets/images/wealthsimple_og_image.jpeg") no-repeat;
+    background-size: cover;
+  }
   &__container {
     display: flex;
     width: 100%;
@@ -39,6 +45,8 @@
   }
 
   &__right {
+    display: flex;
+    justify-content: center;
     width: 100%;
     @include tablet {
       width: 55%;
@@ -46,17 +54,20 @@
   }
 
   &__image {
-    width: 100%;
+    width: 25rem;
     height: 100%;
 
     @include tablet {
+      display: none;
       padding-top: 2rem;
+      width: 35rem;
     }
   }
 
   &__left {
     display: flex;
     flex-direction: column;
+    align-items: center;
     @include tablet {
       width: 45%;
     }
@@ -76,6 +87,7 @@
   text-decoration: none;
   text-align: center;
   margin: 1rem;
+  width: 8rem;
 
   @include tablet {
     margin: 1rem 5rem;

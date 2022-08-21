@@ -8,12 +8,12 @@ exports.index = (req, res) => {
 
 exports.item = (req, res) => {
   knex("finances")
-    .where({ type: req.params.type })
+    .where({ category: req.params.category })
     .then((data) => {
       if (!data.length) {
         return res.status(404).send("Item not found.");
       }
-      res.status(200).json(data[0]);
+      res.status(200).json(data);
     })
     .catch((err) => {
       res.status(400).send(`Error retrieving data: ${err}.`);
