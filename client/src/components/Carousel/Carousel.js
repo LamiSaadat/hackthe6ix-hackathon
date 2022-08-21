@@ -48,12 +48,12 @@ function Carousel({ borderColor, data }) {
       <div>
         <img
           src={leftArrow}
-          className="accounts__arrow"
+          className="carousel__arrow"
           onClick={prevSlide}
         ></img>
         <img
           src={rightArrow}
-          className="accounts__arrow"
+          className="carousel__arrow"
           onClick={nextSlide}
         ></img>
       </div>

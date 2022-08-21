@@ -39,28 +39,31 @@ export default function MobileMenu({ menuOpen, setMenuOpen }) {
           {investMenuClicked && (
             <ul className="mobile-menu__invest-list">
               <li className="mobile-menu__invest-item">
-                <Link
-                  to="https://www.wealthsimple.com/en-ca/invest/stocks-and-etfs"
+                <a
+                  href="https://www.wealthsimple.com/en-ca/invest/stocks-and-etfs"
                   className="mobile-menu__invest-item"
+                  target="_blank"
                 >
                   Stocks & ETFs
-                </Link>
+                </a>
               </li>
               <li className="mobile-menu__invest-item">
-                <Link
+                <a
                   to="https://www.wealthsimple.com/en-ca/invest/crypto"
                   className="mobile-menu__invest-item"
+                  target="_blank"
                 >
                   Crypto
-                </Link>
+                </a>
               </li>
               <li className="mobile-menu__invest-item">
-                <Link
+                <a
                   to="https://www.wealthsimple.com/en-ca/invest/managed-investing"
                   className="mobile-menu__invest-item"
+                  target="_blank"
                 >
                   Managed Investing
-                </Link>
+                </a>
               </li>
             </ul>
           )}
@@ -70,14 +73,14 @@ export default function MobileMenu({ menuOpen, setMenuOpen }) {
           onClick={() => toggleMenu(menuOpen, setMenuOpen)}
         >
           Spend & save
-          <Link to="https://www.wealthsimple.com/en-ca/spend"></Link>
+          <a to="https://www.wealthsimple.com/en-ca/spend" target="_blank"></a>
         </li>
         <li
           className="mobile-menu__list-item"
           onClick={() => toggleMenu(menuOpen, setMenuOpen)}
         >
           Tax
-          <Link to="https://www.wealthsimple.com/en-ca/tax"></Link>
+          <a to="https://www.wealthsimple.com/en-ca/tax" target="_blank"></a>
         </li>
         <li
           className={
@@ -105,41 +108,51 @@ export default function MobileMenu({ menuOpen, setMenuOpen }) {
           {learnMenuClicked && (
             <ul className="mobile-menu__invest-list">
               <li className="mobile-menu__invest-item">
-                <Link
+                <a
                   to="https://www.wealthsimple.com/en-ca/magazine"
                   className="mobile-menu__invest-item"
+                  target="_blank"
                 >
                   Magazine
-                </Link>
+                </a>
               </li>
               <li className="mobile-menu__invest-item">
-                <Link
+                <a
                   to="https://www.wealthsimple.com/en-ca/learn"
                   className="mobile-menu__invest-item"
+                  target="_blank"
                 >
                   Personal finance 101
-                </Link>
+                </a>
               </li>
               <li className="mobile-menu__invest-item">
-                <Link
+                <a
                   to="https://www.wealthsimple.com/en-ca/tool/tax-calculator"
                   className="mobile-menu__invest-item"
+                  target="_blank"
                 >
                   Income tax calculator
-                </Link>
+                </a>
               </li>
             </ul>
           )}
         </li>
       </ul>
       <div className="mobile-menu__actions">
-        <Link
+        <a
           to="https://my.wealthsimple.com/app/public/signup?locale=en-ca"
           className="mobile-menu__login"
+          target="_blank"
         >
           Log in
+        </a>
+        <Link
+          to="/language"
+          className="mobile-menu__button"
+          onClick={() => toggleMenu(menuOpen, setMenuOpen)}
+        >
+          Get started
         </Link>
-        <button className="mobile-menu__button">Download the app</button>
       </div>
     </nav>
   );

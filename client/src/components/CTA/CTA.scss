@@ -2,17 +2,21 @@
 @use "../../styles/partials/mixins" as *;
 
 .cta-card {
-  height: 90vh;
+  height: 50vh;
 
   @include tablet {
-    height: 70vh;
+    height: 60vh;
     padding: 3rem;
   }
 
   &__container {
-    height: 100vh;
+    height: 50vh;
     background-color: $green-card-color;
     border-radius: 15px;
+
+    @include tablet {
+      height: 60vh;
+    }
   }
 
   &__content {

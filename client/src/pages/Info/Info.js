@@ -15,10 +15,10 @@ function Info() {
       <PersonalFinance />
       <FinanceDefinition />
       <Options />
-      {/* <Investing /> */}
+      <Investing />
+      <Taxes />
       <AccountTypes />
       <InvestmentTypes />
-      {/* <Taxes /> */}
       <CTA />
     </>
   );

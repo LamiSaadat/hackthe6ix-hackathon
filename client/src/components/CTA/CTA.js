@@ -1,10 +1,16 @@
 import React from "react";
 import "./CTA.scss";
+import "aos/dist/aos.css";
+import Aos from "aos";
+import { useEffect } from "react";
 
 function CTA() {
+  useEffect(() => {
+    Aos.init({ duration: 600 });
+  }, []);
   return (
     <>
-      <div className="cta-card">
+      <div className="cta-card" data-aos="fade-up">
         <div className="cta-card__container">
           <div className="cta-card__content">
             <h2>Ready to start?</h2>

@@ -2,6 +2,8 @@ import "./AccountTypes.scss";
 import Carousel from "../Carousel/Carousel";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 function AccountTypes({ data }) {
   const [borderColor, setBorderColor] = useState("light-green");
@@ -14,13 +16,17 @@ function AccountTypes({ data }) {
       });
     };
     fetchData();
+    Aos.init({ duration: 600 });
   }, []);
 
   return (
-    <section className="accounts">
-      <h2 className="accounts__title">Account Types</h2>
-      <Carousel borderColor={borderColor} data={accountData} />
-    </section>
+    <>
+      <a id="account-types"></a>
+      <section className="accounts" data-aos="fade-up">
+        <h2 className="accounts__title">Account Types</h2>
+        <Carousel borderColor={borderColor} data={accountData} />
+      </section>
+    </>
   );
 }
 
