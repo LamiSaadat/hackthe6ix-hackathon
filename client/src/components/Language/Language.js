@@ -1,10 +1,10 @@
 import React from "react";
 import "./Language.scss";
-import canada from "../../assets/images/canada-icon.png";
-import china from "../../assets/images/china-icon.png";
-import philipines from "../../assets/images/philipines-icon.png";
-import india from "../../assets/images/india-icon.png";
-import world from "../../assets/images/world-icon.png";
+import canada from "../../assets/icons/canada-icon.png";
+import china from "../../assets/icons/china-icon.png";
+import philipines from "../../assets/icons/philipines-icon.png";
+import india from "../../assets/icons/india-icon.png";
+import world from "../../assets/icons/world-icon.png";
 
 function Language() {
   return (
