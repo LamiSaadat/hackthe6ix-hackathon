@@ -2,10 +2,10 @@ import "./Home.scss";
 import "../../App.scss";
 import { Link } from "react-router-dom";
 
+import hero from "../../assets/images/homepage-hero.png";
+import Language from "../../components/Language/Language";
 import PersonalFinance from "../../components/PersonalFinance/PersonalFinance";
 import FinanceDefinition from "../../components/FinanceDefinition/FinanceDefinition";
-
-import hero from "../../assets/images/homepage-hero.png";
 
 function Home() {
   return (
@@ -27,6 +27,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <Language />
       <PersonalFinance />
       <FinanceDefinition />
     </>
