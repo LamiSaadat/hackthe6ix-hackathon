@@ -10,6 +10,7 @@ import Language from "../../components/Language/Language";
 import Options from "../../components/Options/Options";
 import PersonalFinance from "../../components/PersonalFinance/PersonalFinance";
 import FinanceDefinition from "../../components/FinanceDefinition/FinanceDefinition";
+import CTA from "../../components/CTA/CTA";
 
 function Home() {
   return (
@@ -39,6 +40,7 @@ function Home() {
       <AccountTypes />
       <InvestmentTypes />
       {/* <Taxes /> */}
+      <CTA />
     </>
   );
 }
