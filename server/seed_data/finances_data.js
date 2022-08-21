@@ -62,4 +62,60 @@ module.exports = [
     description:
       "An exchange-traded fund (ETF) is a type of pooled investment security that operates much like a mutual fund. Typically, ETFs will track a particular index, sector, commodity, or other asset, but unlike mutual funds, ETFs can be purchased or sold on a stock exchange the same way that a regular stock can.",
   },
+  {
+    id: "10",
+    category: "investing",
+    type: "What is investing?",
+    description:
+      "Investing involves committing money in order to earn a financial return. This essentially means that you invest money to make money and achieve your financial goals.",
+  },
+  {
+    id: "11",
+    category: "investing",
+    type: "Stock Market Investing",
+    description:
+      "Stock market investing refers to the buying and selling of stocks. There are many ways to invest in the stock market. The DIY option is to open a brokerage account and trade stocks yourself. The hands-free option is to use a robo-advisor or financial advisor to do it for you.",
+  },
+  {
+    id: "12",
+    category: "investing",
+    type: "Active vs. Passive Investing",
+    description:
+      "Active investing involves paying a human to buy and sell individual stocks regularly through mutual funds. A passive investing strategy involves investing in index ETFs rather than picking stocks. Active investing aims to beat the market where as passive investing aims to track the market.",
+  },
+  {
+    id: "13",
+    category: "investing",
+    type: "What is a Personal Financial Advisor?",
+    description:
+      "A personal financial advisor is a professional who is paid to help you manage your finances, especially retirement goals. This can be an accountant, a Certified Financial Planner™, or a retirement specialist. Depending on their expertise they can also help with taxes, estate planning, mortgages, and other financial goals. ",
+  },
+  {
+    id: "14",
+    category: "investing",
+    type: "What are the best investing strategies?",
+    description:
+      "Although there's no one-size-fits-all approach to investing, the best investing strategies take into account aspects like your personal financial goals, your time horizon (how long you want to keep your money in an investment account), a diversified portfolio, and your risk tolerance.",
+  },
+  {
+    id: "15",
+    category: "taxes",
+    type: "How to file taxes online?",
+    description:
+      "To file your taxes online, you’ll have to make sure that you are filing using a Canada Revenue Agency (CRA) certified tax software platform. In many cases, you can even file your taxes returns for free with one or more of these applications. Any CRA-certified app will allow you to connect to and submit your tax filing through NETFILE. NETFILE is an electronic tax-filing service that lets you file taxes online and send your income tax and benefit return directly to the Canada Revenue Agency (CRA).",
+  },
+  {
+    id: "16",
+    category: "taxes",
+    type: "What is a capital gain?",
+    description:
+      "A capital gain is an increase in the value of an investment (such as stocks or shares in a mutual fund or exchange traded fund) or real estate holding from the original purchase price. If the value of the asset increases, you have a capital gain and you need to pay tax on it.",
+  },
+  {
+    id: "17",
+    category: "taxes",
+    type: "How do Canadian tax brackets work?",
+    description:
+      "Your tax bracket is based on “taxable income”, which is your gross income from all sources, minus any tax deductions you may qualify for. In other words, it’s your net income after you've claimed all your eligible deductions.",
+  },
 ];
