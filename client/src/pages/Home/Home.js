@@ -2,15 +2,6 @@ import "./Home.scss";
 import "../../App.scss";
 import { Link } from "react-router-dom";
 import hero from "../../assets/hero.png";
-import Investing from "../../components/Investing/Investing";
-import AccountTypes from "../../components/AccountTypes/AccountTypes";
-import InvestmentTypes from "../../components/InvestmentTypes/InvestmentTypes";
-import Taxes from "../../components/Taxes/Taxes";
-import Language from "../../components/Language/Language";
-import Options from "../../components/Options/Options";
-import PersonalFinance from "../../components/PersonalFinance/PersonalFinance";
-import FinanceDefinition from "../../components/FinanceDefinition/FinanceDefinition";
-import CTA from "../../components/CTA/CTA";
 
 function Home() {
   return (
@@ -26,21 +17,12 @@ function Home() {
           <div className="hero__left">
             <h2 className="hero__tablet">Investing made simple</h2>
             <h3 className="hero__subhead">New to Investing?</h3>
-            <Link to="/" className="button">
+            <Link to="/language" className="button">
               Get Started
             </Link>
           </div>
         </div>
       </div>
-      <Language />
-      <PersonalFinance />
-      <FinanceDefinition />
-      <Options />
-      {/* <Investing /> */}
-      <AccountTypes />
-      <InvestmentTypes />
-      {/* <Taxes /> */}
-      <CTA />
     </>
   );
 }

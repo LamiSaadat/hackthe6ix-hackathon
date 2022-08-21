@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Language.scss";
 import canada from "../../assets/icons/canada-icon.png";
 import china from "../../assets/icons/china-icon.png";
@@ -16,11 +17,13 @@ function Language() {
           </div>
           <div className="lang-card__bottom">
             <div className="lang-card__img-container">
-              <img
-                src={canada}
-                alt="canada"
-                className="lang-card__image lang-card__image-1"
-              />
+              <Link to="/info">
+                <img
+                  src={canada}
+                  alt="canada"
+                  className="lang-card__image lang-card__image-1"
+                />
+              </Link>
               <p>English</p>
               <p>Français</p>
             </div>
