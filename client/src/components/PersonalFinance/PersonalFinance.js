@@ -8,7 +8,11 @@ function PersonalFinance() {
       <div className="card">
         <div className="card__container">
           <div className="card__content">
-            <h2>We want to break down the barriers to financial literacy</h2>
+            <div className="personal-finance">
+              <h2 className="personal-finance__header">
+                We want to break down the barriers to financial literacy
+              </h2>
+            </div>
           </div>
           <div className="card__bottom">
             <img src={coin} alt="coin" className="card__image" />
