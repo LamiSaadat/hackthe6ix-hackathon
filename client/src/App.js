@@ -6,6 +6,9 @@ import { useState } from "react";
 import MobileMenu from "./components/MobileMenu/MobileMenu";
 import Card from "./components/Card/Card";
 import Investing from "./components/Investing/Investing";
+import AccountTypes from "./components/AccountTypes/AccountTypes";
+import InvestmentTypes from "./components/InvestmentTypes/InvestmentTypes";
+import Taxes from "./components/Taxes/Taxes";
 
 const App = () => {
   const [investMenuOpen, setInvestMenuOpen] = useState(false);
@@ -27,6 +30,9 @@ const App = () => {
         <Route exact path="/" element={<Home />} />
         <Route exact path="card" element={<Card />} />
         <Route exact path="investing101" element={<Investing />} />
+        <Route exact path="account-types" element={<AccountTypes />} />
+        <Route exact path="investment-types" element={<InvestmentTypes />} />
+        <Route exact path="taxes" element={<Taxes />} />
       </Routes>
     </Router>
   );
