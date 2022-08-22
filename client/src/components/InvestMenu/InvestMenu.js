@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./InvestMenu.scss";
 
 function InvestMenu({ investMenuOpen, setInvestMenuOpen }) {

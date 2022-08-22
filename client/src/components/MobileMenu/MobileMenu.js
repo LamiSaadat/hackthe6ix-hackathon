@@ -43,6 +43,7 @@ export default function MobileMenu({ menuOpen, setMenuOpen }) {
                   href="https://www.wealthsimple.com/en-ca/invest/stocks-and-etfs"
                   className="mobile-menu__invest-item"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Stocks & ETFs
                 </a>
@@ -52,6 +53,7 @@ export default function MobileMenu({ menuOpen, setMenuOpen }) {
                   to="https://www.wealthsimple.com/en-ca/invest/crypto"
                   className="mobile-menu__invest-item"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Crypto
                 </a>
@@ -61,6 +63,7 @@ export default function MobileMenu({ menuOpen, setMenuOpen }) {
                   to="https://www.wealthsimple.com/en-ca/invest/managed-investing"
                   className="mobile-menu__invest-item"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Managed Investing
                 </a>
@@ -112,6 +115,7 @@ export default function MobileMenu({ menuOpen, setMenuOpen }) {
                   to="https://www.wealthsimple.com/en-ca/magazine"
                   className="mobile-menu__invest-item"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Magazine
                 </a>
@@ -121,6 +125,7 @@ export default function MobileMenu({ menuOpen, setMenuOpen }) {
                   to="https://www.wealthsimple.com/en-ca/learn"
                   className="mobile-menu__invest-item"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Personal finance 101
                 </a>
@@ -130,6 +135,7 @@ export default function MobileMenu({ menuOpen, setMenuOpen }) {
                   to="https://www.wealthsimple.com/en-ca/tool/tax-calculator"
                   className="mobile-menu__invest-item"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Income tax calculator
                 </a>
@@ -143,6 +149,7 @@ export default function MobileMenu({ menuOpen, setMenuOpen }) {
           to="https://my.wealthsimple.com/app/public/signup?locale=en-ca"
           className="mobile-menu__login"
           target="_blank"
+          rel="noreferrer"
         >
           Log in
         </a>

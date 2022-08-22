@@ -1,5 +1,5 @@
 import "./Carousel.scss";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import rightArrow from "../../assets/icons/right-arrow.png";
 import leftArrow from "../../assets/icons/left-arrow.png";
 
@@ -50,11 +50,13 @@ function Carousel({ borderColor, data }) {
           src={leftArrow}
           className="carousel__arrow"
           onClick={prevSlide}
+          alt="Previous arrow"
         ></img>
         <img
           src={rightArrow}
           className="carousel__arrow"
           onClick={nextSlide}
+          alt="Next arrow"
         ></img>
       </div>
     </section>
